@@ -8,7 +8,7 @@ const BundleAnalyzerPlugin =
 	require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
-	mode: "producion",
+	mode: "production",
 	output: {
 		filename: "[name].[contenthash].js",
 		path: path.resolve(__dirname, "docs"),
@@ -24,7 +24,7 @@ module.exports = merge(common, {
 		new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
 		new BundleAnalyzerPlugin(),
 	],
-	modules: {
+	module: {
 		rules: [
 			{ test: /\.m?js$/, exclude: /node_modules/, use: ["babel-loader"] },
 			{

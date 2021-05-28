@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Wentao Li's research projects in Finance"
+		/>
+		<link
+			rel="shortcut icon"
+			href="../../assets/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Research - Wentao Li</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<button class="hamburger">
+					<img
+						src="../../assets/menu.svg"
+						alt="menu"
+						class="hamburger__image"
+						width="27"
+						height="16"
+					/>
+				</button>
+				<div class="logo">
+					<a class="logo__text" data-lan="name" href="index.html">Wentao Li</a>
+				</div>
+				<div class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="index.html" class="menu__anchor" data-lan="home">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="research.html" class="menu__anchor" data-lan="research"
+								>Research</a
+							>
+						</li>
+						<li class="menu__item">
+							<a href="teaching.html" class="menu__anchor" data-lan="teaching"
+								>Teaching</a
+							>
+						</li>
+						<li class="menu__item">
+							<a href="tutoring.html" class="menu__anchor" data-lan="tutoring"
+								>Tutoring</a
+							>
+						</li>
+						<li class="menu__item">
+							<a
+								href="../../assets/CV - Wentao Li.pdf"
+								download="Wentao Li CV.pdf"
+								class="menu__anchor"
+								data-lan="cvButton"
+								>CV</a
+							>
+						</li>
+					</ul>
+					<button class="menu__button" data-lan="nextLanguage">中文</button>
+				</div>
+			</nav>
+		</header>
+		<main class="research-main">
+			<h1 class="page-title" data-lan="research">Research</h1>
+			<article class="published-papers">
+				<h2 class="published-papers__title" data-lan="publishedPapers">
+					Published Papers
+				</h2>
+				<article class="card">
+					<div class="card__text">
+						<h3 class="card__title">Balance of Payments</h3>
+						<p class="card__link card__link--forthcoming">
+							<span class="card__link card__link--journal"
+								>Applied Economics</span
+							>, Forthcoming
+						</p>
+						<h4 class="card__abstract-title" data-lan="abstract">ABSTRACT</h4>
+						<p class="card__abstract-content">
+							We apply Thirlwall's law (Thirlwall 1979) to estimate long run
+							growth in the UK. In particular, we develop a new test allowing
+							for potential structural breaks based on 2SLS to remedy potential
+							weaknesses that existed in previous methods. Our results show the
+							UK had different balance of payments positions in different time
+							periods, and its growth has been constrained in the past two
+							decades. We further elaborate on pound's changing role as a
+							reserve currency and how this has affected the UK's external
+							constraint and growth.
+						</p>
+					</div>
+					<div class="card__images">
+						<img
+							src="../../assets/balance-of-payments.jpg"
+							alt="A comparison of BOP contrained growth rate and real growth rate in the UK."
+							class="card__img"
+						/>
+					</div>
+				</article>
+			</article>
+			<article class="ongoing-research">
+				<h2 class="ongoing-research__title" data-lan="researchInProgress">
+					Research in Progress
+				</h2>
+				<article class="card">
+					<div class="card__text">
+						<h3 class="card__title">Network</h3>
+						<a
+							class="card__link card__link--published"
+							href="https://ssrn.com/abstract=3834723"
+						>
+							https://ssrn.com/abstract=3834723
+						</a>
+						<h4 class="card__abstract-title">ABSTRACT</h4>
+						<p class="card__abstract-content">
+							The literature argues that industry network effects imply the
+							predictability of industry returns, while the return
+							predictability can estimate the industry network in reverse. The
+							paper employs rolling window adaptive lasso regressions to test
+							the robustness of return predictions, showing the inherent model
+							instability of the industry network and raising caveats for using
+							the adaptive lasso method to estimate the industry network with a
+							long time series. The out-of-sample predictability is examined by
+							creating long-short trading portfolios based on the predictions.
+							With non-parametric tests, the paper discovers that the
+							out-of-sample predictability exists but is primarily due to the
+							momentum effect. The adaptive lasso portfolios perform
+							significantly worse than the momentum portfolio before the
+							adjustment of risks. Based on the multifactor models, the trading
+							portfolios also fail to continuously generate significant alphas
+							for risk-averse investors.
+						</p>
+					</div>
+					<div class="card__images">
+						<figure class="card__figure">
+							<img
+								src="../../assets/network.jpg"
+								alt="Industry network effects"
+								class="card__img"
+							/>
+							<figcaption class="card__caption">
+								Solid line is profit from trading with industrial network
+								effects; shaded area represents the 90% confidence interval by
+								block bootstrap
+							</figcaption>
+						</figure>
+					</div>
+				</article>
+			</article>
+			<a
+				href="../../assets/CV - Wentao Li.pdf"
+				class="button cv-button"
+				data-lan="cvButton"
+				>View My CV</a
+			>
+		</main>
+		<footer class="footer">
+			<article class="contact">
+				<h2 class="contact__title">Contact</h2>
+				<ul class="contact__list">
+					<li class="contact__item contact__item--general-email">
+						<a
+							data-lan="generalEmail"
+							href="mailto:Wentao.Li.DPHIL@said.oxford.edu"
+							class="contact__anchor"
+							>Wentao.Li.DPHIL@said.oxford.edu</a
+						><span data-lan="generalEmail"> (general)</span>
+					</li>
+					<li class="contact__item">
+						<a
+							href="mailto:tutorial@wentaoli.com"
+							class="contact__anchor"
+							data-lan="tutorialEmail"
+							>tutorial@wentaoli.com</a
+						><span data-lan="tutorialEmail"> (for private tutorial)</span>
+					</li>
+					<li class="contact__item">
+						<a
+							href="https://www.linkedin.com/in/jack-wentao-lee/"
+							class="contact__anchor"
+							>https://www.linkedin.com/in/jack-wentao-lee/</a
+						>
+					</li>
+					<li class="contact__item">
+						<a
+							href="https://www.zhihu.com/people/jack-lee-85"
+							class="contact__anchor"
+							>https://www.zhihu.com/people/jack-lee-85</a
+						>
+					</li>
+				</ul>
+			</article>
+			<p class="credits">Website designed and developed by Yinuo Meng</p>
+		</footer>
+	</body>
+</html>
