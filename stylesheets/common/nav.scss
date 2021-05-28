@@ -1,0 +1,80 @@
+@use "./basis";
+
+body {
+	margin: 0;
+}
+
+.header {
+	box-shadow: 0 3px 4px rgb(209, 207, 207);
+	@include basis.reset-general;
+	margin: 0;
+
+}
+
+.nav {
+	@include basis.reset-general;
+	background-color: var(--white);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 0.3rem;
+	margin: auto;
+	max-width: 1366px;
+
+	.hamburger {
+		display: none;
+		position: absolute;
+	}
+
+	.logo__text,
+	.logo__text:visited {
+		text-decoration: none;
+		font: var(--logo-text);
+		color: var(--black);
+
+		&:active {
+			color: var(--dark-blue);
+		}
+	}
+
+	.menu {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.menu__list {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		@include basis.reset-ul;
+	}
+
+	.menu__anchor {
+		margin: 0 1.1rem;
+		font: var(--nav-anchor);
+		color: var(--black);
+		text-decoration: none;
+
+		&:hover,
+		&:focus-visible {
+			color: var(--sky-blue);
+			transition: 0.1s;
+		}
+	}
+
+	.menu__button {
+		@include basis.button-reset;
+		font: var(--chinese);
+		color: var(--sky-blue);
+		cursor: pointer;
+		margin-left: 1.1rem;
+
+		&:hover,
+		&:focus-visible {
+			color: var(--black);
+			transition: 0.1s;
+		}
+	}
+}

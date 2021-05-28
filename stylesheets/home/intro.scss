@@ -1,0 +1,69 @@
+@use "../common/basis";
+
+.intro {
+	max-width: 1388px;
+	margin: auto;
+
+	@include basis.flex-centre;
+}
+
+.profile,
+.info {
+	width: 50%;
+	padding: 6.19rem;
+	overflow: hidden;
+	flex-direction: column;
+	@include basis.flex-centre;
+}
+
+.profile__pic {
+	border-radius: 50%;
+	margin-bottom: 2rem;
+}
+
+.profile__anchor {
+	text-decoration: none;
+	height: 35px;
+	display: inline-block;
+}
+
+.profile__icon {
+	height: 35px;
+	margin: 0.3rem;
+}
+
+.info__name {
+	font: var(--h1-home);
+	color: var(--dark-blue);
+	margin: 0;
+	margin-bottom: 1.25rem;
+}
+
+.info__role {
+	font: var(--sub-text);
+	color: var(--black);
+	font-size: 1.65rem;
+	@include basis.flex-centre;
+	flex-direction: column;
+	margin: 0;
+}
+
+.info__uni {
+	color: var(--sky-blue);
+	text-decoration: none;
+
+	&:hover,
+	&:focus-visible {
+		text-decoration: underline;
+	}
+}
+
+.info__bio {
+	font: var(--p);
+	color: var(--black);
+	text-align: center;
+}
+
+.info__to-research {
+	@include basis.button;
+}
