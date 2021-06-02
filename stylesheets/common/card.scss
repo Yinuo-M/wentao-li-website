@@ -1,0 +1,72 @@
+@use "./basis.scss";
+
+.card {
+  max-width: 1366px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1rem;
+	@include basis.reset-general;
+}
+
+.card__title {
+	font: var(--h3);
+	color: var(--black);
+	@include basis.reset-general;
+}
+
+.card__link {
+	font: var(--sub-text);
+	color: var(--gray);
+	margin: 0;
+}
+
+.card__link--journal {
+  font-style: italic;
+}
+
+.card__link--published {
+  @include basis.reset-a;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--dark-blue);
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.card__abstract-title {
+	font: var(--abstract);
+	letter-spacing: 0.22rem;
+	margin: 0;
+	padding: 2rem 0 0.3rem 0;
+	color: var(--black);
+	border-bottom: 1px black solid;
+}
+
+.card__abstract-content {
+	margin: 0;
+	padding-top: 0.5rem;
+  font: var(--p);
+  color: var(--black);
+}
+
+.card__images, .card__figure {
+  @include basis.flex-centre;
+  flex-direction: column;
+}
+
+.card__caption {
+  font: var(--caption);
+  color: var(--gray);
+  max-width: 28rem;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.card__img {
+  height: auto;
+  max-width: 100%;
+}

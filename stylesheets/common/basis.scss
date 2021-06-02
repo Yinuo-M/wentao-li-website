@@ -6,20 +6,23 @@
 	--dark-blue: #274c77;
 	--off-white: #f6f7f8;
 
-	--button-text: 1.69rem "Merriweather", serif;
+	--button-text: 1.4rem "Merriweather", serif;
 	--caption: 1rem/1.25 "Source Sans Pro", sans-serif;
 	--h1-home: 700 3.06rem "Merriweather", serif;
 	--h1-others: 700 4.75rem "Merriweather", serif;
 	--h2: 700 2.44rem "Merriweather", serif;
 	--h3: 1.94rem "Merriweather", serif;
 	--h4: 1.31rem "Merriweather", serif;
-	--bullet-points: 1.31rem "Merriweather", serif;
+	--bullet-points: 1.19rem "Merriweather", serif;
 	--p: 1.19rem/1.37 "Source Sans Pro", sans-serif;
-	--sub-text: 1.88rem "Source Sans Pro", sans-serif;
+	--sub-text: 1.1rem "Source Sans Pro", sans-serif;
+	--footer-title: 2.2rem "Merriweather", serif;
 	--footer-text: 1rem/1.88 "Source Sans Pro", sans-serif;
 	--logo-text: 1.88rem "Merriweather", serif;
 	--nav-anchor: 1rem "Merriweather", serif;
 	--chinese: 700 1rem "Noto Serif SC", serif;
+	--credits: 0.875rem "Source Sans Pro", sans-serif;
+	--abstract: 1.31rem "Source Sans Pro", sans-serif;
 }
 
 @mixin reset-general {
@@ -60,7 +63,7 @@
 	padding: 1rem 2rem;
 	text-decoration: none;
 	margin-top: 2.5rem;
-	transition: box-shadow 0.3s ease-out;
+	transition: box-shadow 0.3s 0.1s ease-out;
 
 	&:hover,
 	&:focus-visible {

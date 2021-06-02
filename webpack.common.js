@@ -4,6 +4,7 @@ module.exports = {
 	entry: {
 		common: "./common.js",
 		home: "./index.js",
+		research: "./pages/research/research.js",
 	},
 	target: "web",
 	devServer: {
@@ -23,7 +24,7 @@ module.exports = {
 		}),
 		new HTMLWebpackPlugin({
 			template: "./pages/research/research.html",
-			chunks: ["common"],
+			chunks: ["common", "research"],
 			filename: "research.html",
 		}),
 		new HTMLWebpackPlugin({

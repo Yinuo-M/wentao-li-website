@@ -1,0 +1,66 @@
+@use "../common/basis";
+
+.facts-background-wrapper {
+  background: var(--off-white);
+  width: 100%;
+}
+
+.facts {
+  max-width: 1366px;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding: 5rem 1rem;
+  margin: auto;
+}
+
+.education__title, .interests__title {
+  font: var(--h2);
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.education__title::before {
+  content:url("../../assets/Icon\ awesome-university.svg");
+  margin-right: 7px;
+}
+
+.interests__title::before {
+  content:url("../../assets/Icon\ metro-books.svg");
+  margin-right: 7px;
+}
+
+.education__list {
+  @include basis.reset-ul;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem 2rem;
+  font: var(--bullet-points);
+  color: var(--black);
+}
+
+.education__degree {
+  font-weight: 600;
+}
+
+.education__uni {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--dark-blue);
+}
+
+.interests {
+  text-align: center
+}
+
+.interests__list {
+  font: var(--bullet-points);
+  color: var(--black);
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+.interests__item {
+  margin-bottom: 0.7rem;
+}

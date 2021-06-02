@@ -1,0 +1,40 @@
+@use "../common/basis.scss";
+@use "../common/card.scss";
+
+.research-main {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.background-deco {
+	position: absolute;
+	font-size: 229px;
+	color: #f6f7f8c7;
+	z-index: -1;
+	transform: rotate(90deg);
+	top: 40rem;
+	right: -300px;
+	overflow: hidden;
+	line-height: 1;
+}
+
+.page-title {
+	font: var(--h1-others);
+	color: var(--dark-blue);
+	margin: 6rem 0 7rem 0;
+  padding: 0 1rem;
+}
+
+.published-papers,
+.ongoing-research {
+	padding: 0 1rem;
+  margin-bottom: 10rem;
+}
+
+.published-papers__title,
+.ongoing-research__title {
+	text-align: center;
+	font: var(--h2);
+  color: var(--black);
+  margin-bottom: 5rem;
+}

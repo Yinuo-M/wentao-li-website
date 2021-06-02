@@ -29,7 +29,12 @@
 
 .profile__icon {
 	height: 35px;
-	margin: 0.3rem;
+	margin: 0.4rem;
+  transition: transform 0.2s;
+
+	&:hover {
+		transform: translateY(-6px);
+	}
 }
 
 .info__name {
@@ -56,12 +61,16 @@
 	&:focus-visible {
 		text-decoration: underline;
 	}
+
+	&:active {
+		color: var(--black);
+	}
 }
 
 .info__bio {
 	font: var(--p);
 	color: var(--black);
-	text-align: center;
+	text-align: justify;
 }
 
 .info__to-research {
