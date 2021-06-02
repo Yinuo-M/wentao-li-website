@@ -4,7 +4,7 @@
 	max-width: 1366px;
 	text-align: left;
 	background: var(--white);
-	padding: 2rem 1rem;
+	padding: 2rem 4rem;
   margin: 0 auto;
 }
 
@@ -23,6 +23,7 @@
 
 	& span {
 		color: var(--gray);
+		display: inline-block
 	}
 }
 
@@ -63,7 +64,7 @@
 
 .credits {
 	margin: 0 auto;
-	padding: 1.2rem 1rem;
+	padding: 1.2rem 4rem;
 	color: var(--off-white);
 	font: var(--credits);
 	max-width: 1366px;
@@ -77,4 +78,24 @@
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+@media (max-width: 500px) {
+	.contact {
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.contact__title {
+		text-align: center;
+	}
+
+	.credits {
+		padding: 1rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	
 }
