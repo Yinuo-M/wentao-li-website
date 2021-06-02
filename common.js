@@ -5,3 +5,17 @@ import "./stylesheets/common/common.scss";
 if (module.hot) {
 	module.hot.accept();
 }
+
+//ANCHOR navigation
+const menu = document.querySelector(".menu__list");
+const menuButton = document.querySelector(".hamburger__image");
+
+menuButton.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+	if (menu.classList.contains("menu__list--displayed")) {
+		menu.classList.remove("menu__list--displayed");
+	} else {
+		menu.classList.add("menu__list--displayed");
+	}
+}

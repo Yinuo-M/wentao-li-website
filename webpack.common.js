@@ -5,6 +5,8 @@ module.exports = {
 		common: "./common.js",
 		home: "./index.js",
 		research: "./pages/research/research.js",
+		teaching: "./pages/teaching/teaching.js",
+		tutoring: "./pages/tutoring/tutoring.js",
 	},
 	target: "web",
 	devServer: {
@@ -29,12 +31,12 @@ module.exports = {
 		}),
 		new HTMLWebpackPlugin({
 			template: "./pages/teaching/teaching.html",
-			chunks: ["common"],
+			chunks: ["common", "teaching"],
 			filename: "teaching.html",
 		}),
 		new HTMLWebpackPlugin({
 			template: "./pages/tutoring/tutoring.html",
-			chunks: ["common"],
+			chunks: ["common", "tutoring"],
 			filename: "tutoring.html",
 		}),
 	],

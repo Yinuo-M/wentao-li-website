@@ -1,0 +1,121 @@
+@use "../common/basis.scss";
+
+.tutoring-main {
+	max-width: 1366px;
+	margin: auto;
+}
+
+.page-title {
+	@include basis.page-title;
+	text-align: center;
+}
+
+.tutoring-info__wrapper {
+	@include basis.flex-centre;
+	justify-content: space-evenly;
+	margin-bottom: 6rem;
+}
+
+.tutoring-info__text-wrapper {
+	@include basis.flex-centre;
+	flex-direction: column;
+	margin: 0 3.63rem;
+}
+
+.tutoring-info__text {
+	@include basis.flex-centre;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.tutoring-info__text-title {
+	font: var(--h2);
+	color: var(--black);
+	margin: 0;
+}
+
+.tutoring-info__text-content {
+	font: var(--p);
+	color: var(--black);
+	text-align: left;
+}
+
+.tutoring-info__img-wrapper--right {
+	margin-left: 6.2rem;
+}
+.tutoring-info__img-wrapper--left {
+	margin-right: 6.2rem;
+}
+
+.tutorial-info__img {
+	max-width: 100%;
+	height: auto;
+}
+
+.tutoring-info__link {
+	color: var(--sky-blue);
+	&:hover,
+	&:focus-visible {
+		color: var(--dark-blue);
+	}
+
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.tutoring-cta {
+	@include basis.flex-centre;
+}
+
+.tutoring-cta__wrapper {
+	background: var(--off-white);
+	max-width: 33rem;
+	box-shadow: 0 15px 5px -7px rgb(211, 210, 210);
+	border: 1px solid rgb(221, 220, 220);
+}
+
+.tutoring-cta__title {
+	font: var(--h2);
+	color: var(--off-white);
+	background: var(--dark-blue);
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+}
+
+.tutoring-cta__content {
+	padding: 0 2rem;
+	text-align: justify;
+	font: var(--p);
+}
+
+.tutorial-cta__link {
+	color: var(--sky-blue);
+	&:hover,
+	&:focus-visible {
+		color: var(--dark-blue);
+	}
+
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.disclaimer {
+	color: var(--gray);
+	font: var(--caption);
+	text-align: center;
+	max-width: 33rem;
+	margin: 2.5rem auto 0 auto;
+}
+
+.footer,
+.contact {
+	background: var(--off-white);
+}
+
+.footer {
+	margin-top: 7rem;
+}

@@ -41,19 +41,13 @@
 							<a href="index.html" class="menu__anchor">Home</a>
 						</li>
 						<li class="menu__item">
-							<a href="research.html" class="menu__anchor
-								>Research</a
-							>
+							<a href="research.html" class="menu__anchor">Research</a>
 						</li>
 						<li class="menu__item">
-							<a href="teaching.html" class="menu__anchor"
-								>Teaching</a
-							>
+							<a href="teaching.html" class="menu__anchor">Teaching</a>
 						</li>
 						<li class="menu__item">
-							<a href="tutoring.html" class="menu__anchor"
-								>Tutoring</a
-							>
+							<a href="tutoring.html" class="menu__anchor">Tutoring</a>
 						</li>
 						<li class="menu__item">
 							<a
@@ -64,7 +58,7 @@
 							>
 						</li>
 					</ul>
-					<button class="menu__button" data-lan="nextLanguage">中文</button>
+					<button class="menu__button">中文</button>
 				</div>
 			</nav>
 		</header>
@@ -158,11 +152,13 @@
 					</div>
 				</article>
 			</article>
-			<a
-				href="../../assets/CV - Wentao Li.pdf"
-				class="button cv-button"
-				>View My CV</a
-			>
+			<div class="button-wrapper">
+				<a
+					href="../../assets/CV - Wentao Li.pdf"
+					class="button cv-button"
+					>View My CV</a
+				>
+			</div>
 		</main>
 		<footer class="footer">
 			<article class="contact">
@@ -170,37 +166,40 @@
 				<ul class="contact__list">
 					<li class="contact__item contact__item--general-email">
 						<a
-							data-lan="generalEmail"
 							href="mailto:Wentao.Li.DPHIL@said.oxford.edu"
-							class="contact__anchor"
+							class="contact__anchor contact__anchor--mail"
 							>Wentao.Li.DPHIL@said.oxford.edu</a
-						><span data-lan="generalEmail"> (general)</span>
+						><span> (general)</span>
 					</li>
 					<li class="contact__item">
 						<a
 							href="mailto:tutorial@wentaoli.com"
-							class="contact__anchor"
-							data-lan="tutorialEmail"
+							class="contact__anchor contact__anchor--mail"
 							>tutorial@wentaoli.com</a
-						><span data-lan="tutorialEmail"> (for private tutorial)</span>
+						><span> (for private tutorial)</span>
 					</li>
 					<li class="contact__item">
 						<a
 							href="https://www.linkedin.com/in/jack-wentao-lee/"
-							class="contact__anchor"
+							class="contact__anchor contact__anchor--linkedin"
 							>https://www.linkedin.com/in/jack-wentao-lee/</a
 						>
 					</li>
 					<li class="contact__item">
 						<a
 							href="https://www.zhihu.com/people/jack-lee-85"
-							class="contact__anchor"
+							class="contact__anchor contact__anchor--zhihu"
 							>https://www.zhihu.com/people/jack-lee-85</a
 						>
 					</li>
 				</ul>
 			</article>
-			<p class="credits">Website designed and developed by Yinuo Meng</p>
+			<div class="credits-wrapper">
+				<p class="credits">
+					Website designed and developed by
+					<a href="https://github.com/Yinuo-M" class="yinuo">Yinuo Meng</a>
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>

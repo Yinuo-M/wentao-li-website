@@ -32,24 +32,39 @@
 				<div class="logo">
 					<a class="logo__text" href="index.html">Wentao Li</a>
 				</div>
-				<ul class="menu">
-					<li class="menu_item" data-lan="home">Home</li>
-					<li class="menu_item" data-lan="research">Research</li>
-					<li class="menu_item" data-lan="teaching">Teaching</li>
-					<li class="menu_item" data-lan="tutoring">Tutoring</li>
-					<li class="menu_item" data-lan="cv">CV</li>
-					<li class="menu_item" data-lan="nextLanguage">中文</li>
-				</ul>
+				<div class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="index.html" class="menu__anchor">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="research.html" class="menu__anchor">Research</a>
+						</li>
+						<li class="menu__item">
+							<a href="teaching.html" class="menu__anchor">Teaching</a>
+						</li>
+						<li class="menu__item">
+							<a href="tutoring.html" class="menu__anchor">Tutoring</a>
+						</li>
+						<li class="menu__item">
+							<a
+								href="../../assets/CV - Wentao Li.pdf"
+								download="Wentao Li CV.pdf"
+								class="menu__anchor"
+								>CV</a
+							>
+						</li>
+					</ul>
+					<button class="menu__button">中文</button>
+				</div>
 			</nav>
 		</header>
 		<main class="teaching-main">
-			<h1 class="page-title" >Teaching</h1>
+			<h1 class="page-title">Teaching</h1>
 			<article class="card">
 				<div class="card__text">
 					<h2 class="card__title">Introductory Econometrics</h2>
-					<p class="card__uni">
-						Sun Yat-sen University
-					</p>
+					<p class="card__uni">Sun Yat-sen University</p>
 					<a
 						href="../../assets/Introductory Econometrics.rar"
 						download="Introductory-Econometrics.rar"
@@ -67,27 +82,60 @@
 						data settings are also discussed.
 					</p>
 				</div>
-        <div class="card__images">
-          <figure class="card__figure">
-            <img src="../../assets/Sun Yat-sen University.jpg" alt="Sun Yat-sen University" class="card__img">
-            <figcaption class="card__caption">
-              Sun Yat-sen University
-            </figcaption>
-          </figure>
-        </div>
+				<div class="card__images">
+					<figure class="card__figure">
+						<img
+							src="../../assets/Sun Yat-sen University.jpg"
+							alt="Sun Yat-sen University"
+							class="card__img"
+						/>
+						<figcaption class="card__caption">
+							Sun Yat-sen University
+						</figcaption>
+					</figure>
+				</div>
 			</article>
 		</main>
-    <footer class="footer">
+		<footer class="footer">
 			<article class="contact">
 				<h2 class="contact__title">Contact</h2>
 				<ul class="contact__list">
-					<li class="contact__item contact__item--general-email" ><a data-lan="generalEmail" href="mailto:Wentao.Li.DPHIL@said.oxford.edu" class="contact__anchor">Wentao.Li.DPHIL@said.oxford.edu</a><span data-lan="generalEmail"> (general)</span></li>
-					<li class="contact__item"><a href="mailto:tutorial@wentaoli.com" class="contact__anchor" data-lan="tutorialEmail" >tutorial@wentaoli.com</a><span data-lan="tutorialEmail"> (for private tutorial)</span></li>
-					<li class="contact__item"><a href="https://www.linkedin.com/in/jack-wentao-lee/" class="contact__anchor">https://www.linkedin.com/in/jack-wentao-lee/</a></li>
-					<li class="contact__item"><a href="https://www.zhihu.com/people/jack-lee-85" class="contact__anchor">https://www.zhihu.com/people/jack-lee-85</a></li>
+					<li class="contact__item contact__item--general-email">
+						<a
+							href="mailto:Wentao.Li.DPHIL@said.oxford.edu"
+							class="contact__anchor contact__anchor--mail"
+							>Wentao.Li.DPHIL@said.oxford.edu</a
+						><span> (general)</span>
+					</li>
+					<li class="contact__item">
+						<a
+							href="mailto:tutorial@wentaoli.com"
+							class="contact__anchor contact__anchor--mail"
+							>tutorial@wentaoli.com</a
+						><span> (for private tutorial)</span>
+					</li>
+					<li class="contact__item">
+						<a
+							href="https://www.linkedin.com/in/jack-wentao-lee/"
+							class="contact__anchor contact__anchor--linkedin"
+							>https://www.linkedin.com/in/jack-wentao-lee/</a
+						>
+					</li>
+					<li class="contact__item">
+						<a
+							href="https://www.zhihu.com/people/jack-lee-85"
+							class="contact__anchor contact__anchor--zhihu"
+							>https://www.zhihu.com/people/jack-lee-85</a
+						>
+					</li>
 				</ul>
 			</article>
-			<p class="credits">Website designed and developed by <a href="https://github.com/Yinuo-M" class="yinuo"></a>Yinuo Meng</a></p>
+			<div class="credits-wrapper">
+				<p class="credits">
+					Website designed and developed by
+					<a href="https://github.com/Yinuo-M" class="yinuo">Yinuo Meng</a>
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>

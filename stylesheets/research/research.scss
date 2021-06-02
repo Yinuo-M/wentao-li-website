@@ -19,16 +19,13 @@
 }
 
 .page-title {
-	font: var(--h1-others);
-	color: var(--dark-blue);
-	margin: 6rem 0 7rem 0;
-  padding: 0 1rem;
+	@include basis.page-title
 }
 
 .published-papers,
 .ongoing-research {
 	padding: 0 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
 }
 
 .published-papers__title,
@@ -36,5 +33,22 @@
 	text-align: center;
 	font: var(--h2);
   color: var(--black);
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+
+.button-wrapper {
+  @include basis.flex-centre;
+}
+
+.cv-button {
+  @include basis.button;
+	margin-top: -3rem;
+}
+
+.footer, .contact {
+	background: var(--off-white);
+}
+
+.footer {
+	margin-top: 7rem;
 }
