@@ -68,6 +68,11 @@
 	&:focus-visible {
 		box-shadow: inset 20rem 0 0 0 var(--sky-blue);
 	}
+
+	@media (max-width: 600px) {
+		font-size: 1.2rem;
+		padding: 0.7rem 1rem;
+	}
 }
 
 @mixin page-title {
