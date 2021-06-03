@@ -15,7 +15,7 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.html$/, use: ["html-loader"] },
-			{ test: /\.(jpe?g|gif|svg|png|ico)$/, type: "asset/resource" },
+			{ test: /\.(jpe?g|gif|svg|png|ico|pdf|rar)$/, type: "asset/resource" },
 		],
 	},
 	plugins: [

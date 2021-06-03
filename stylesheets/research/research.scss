@@ -4,7 +4,7 @@
 .research-main {
 	max-width: 1366px;
 	margin: 0 auto;
-	padding: 0 1rem
+	padding: 0 2rem;
 }
 
 .background-deco {
@@ -60,7 +60,7 @@
 	}
 
 	.research-main {
-		padding: 0 2rem;
+		padding: 0 4rem;
 	}
 
 	.page-title {
@@ -79,8 +79,13 @@
 
 	.published-papers__title,
 	.ongoing-research__title {
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 		font-size: 2rem;
+	}
+
+	.published-papers,
+	.ongoing-research {
+		margin-bottom: 5rem;
 	}
 
 	.page-title {
@@ -88,13 +93,16 @@
 		font-size: 4rem;
 		margin: 3rem auto;
 	}
+
+	.research-main {
+		padding: 0 2rem;
+	}
 }
 
 @media (max-width: 600px) {
-
 	.page-title {
 		font-size: 3.5rem;
-		margin: 2rem auto;
+		margin: 3rem auto;
 	}
 }
 
