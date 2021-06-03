@@ -50,10 +50,15 @@
 		font-size: 3.5rem;
 		margin: 2rem auto;
 	}
+	
 }
 
 @media (max-width: 400px) {
 	.footer {
 		margin-top: 3rem;
+	}
+
+	.teaching-main {
+		padding: 0 1rem;
 	}
 }

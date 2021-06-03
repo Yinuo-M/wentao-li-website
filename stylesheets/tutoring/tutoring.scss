@@ -12,9 +12,10 @@
 }
 
 .tutoring-info__wrapper {
-	@include basis.flex-centre;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	margin-bottom: 6rem;
+	align-items: center;
 }
 
 .tutoring-info__text-wrapper {
@@ -42,16 +43,10 @@
 	text-align: left;
 }
 
-.tutoring-info__img-wrapper--right {
-	margin-left: 6.2rem;
-}
-.tutoring-info__img-wrapper--left {
-	margin-right: 6.2rem;
-}
-
-.tutorial-info__img {
+.tutoring-info__img {
 	max-width: 100%;
 	height: auto;
+	margin: auto;
 }
 
 .tutoring-info__link {
@@ -75,12 +70,13 @@
 	max-width: 33rem;
 	box-shadow: 0 15px 5px -7px rgb(211, 210, 210);
 	border: 1px solid rgb(221, 220, 220);
+	margin: 0 2rem;
 }
 
 .tutoring-cta__title {
 	font: var(--h2);
 	color: var(--off-white);
-  font-size: 2.35rem;
+	font-size: 2.35rem;
 	background: var(--dark-blue);
 	margin: 0;
 	padding: 1rem;
@@ -112,6 +108,7 @@
 	text-align: center;
 	max-width: 33rem;
 	margin: 2.5rem auto 0 auto;
+	padding: 0 1rem;
 }
 
 .footer,
@@ -129,7 +126,75 @@
 
 @media (max-width: 1300px) {
 	.tutoring-info__wrapper {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
+		column-gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.tutoring-info__text-wrapper {
+		margin: 0 3rem;
+	}
+
+	.tutoring-info__text-content {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1000px) {
+	.tutoring-info__wrapper {
+		@include basis.flex-centre;
+		justify-content: space-around;
+		flex-direction: column;
+		margin-bottom: 1rem;
+	}
+
+	.tutoring-info__wrapper--2 {
+		flex-direction: column-reverse;
+	}
+
+	.tutoring-info__text-wrapper {
+		margin-top: 3rem;
+	}
+
+	.page-title {
+		font-size: 4rem;
+		margin: 3rem auto;
+	}
+
+	.tutoring-info__text-title {
+		font-size: 2rem;
+	}
+
+	.footer {
+		margin-top: 4rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-title {
+		font-size: 3.5rem;
+		margin: 3rem auto;
+	}
+
+	.tutoring-main {
+		padding: 0;
+	}
+
+	.tutoring-info__text-wrapper {
+		margin: 3rem auto 0 auto;
+	}
+
+	.tutoring-cta__content {
+		text-align: center;
+		padding: 0 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.tutoring-info__text-wrapper {
+		margin: 3rem 1rem 0 1rem;
+	}
+
+	.tutoring-cta__title {
+		font-size: 2rem;
 	}
 }
