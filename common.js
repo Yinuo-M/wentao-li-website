@@ -15,7 +15,9 @@ menuButton.addEventListener("click", toggleMenu);
 function toggleMenu() {
 	if (menu.classList.contains("menu__list--displayed")) {
 		menu.classList.remove("menu__list--displayed");
+		menuButton.setAttribute("aria-expanded", "false");
 	} else {
 		menu.classList.add("menu__list--displayed");
+		menuButton.setAttribute("aria-expanded", "true");
 	}
 }
