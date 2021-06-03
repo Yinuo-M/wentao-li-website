@@ -8,7 +8,7 @@ if (module.hot) {
 
 //ANCHOR navigation
 const menu = document.querySelector(".menu__list");
-const menuButton = document.querySelector(".hamburger__image");
+const menuButton = document.querySelector(".hamburger");
 
 menuButton.addEventListener("click", toggleMenu);
 
