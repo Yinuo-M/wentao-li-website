@@ -3,6 +3,7 @@
 .tutoring-main {
 	max-width: 1366px;
 	margin: auto;
+	padding: 0 2rem;
 }
 
 .page-title {
@@ -32,6 +33,7 @@
 	font: var(--h2);
 	color: var(--black);
 	margin: 0;
+	text-align: center;
 }
 
 .tutoring-info__text-content {
@@ -121,3 +123,13 @@
 	margin-top: 7rem;
 }
 
+.bold {
+	font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+	.tutoring-info__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+}
