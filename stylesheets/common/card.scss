@@ -37,6 +37,10 @@
 	}
 }
 
+.card__text {
+	margin-bottom: 2.5rem;
+}
+
 .card__abstract-title {
 	font: var(--abstract);
 	letter-spacing: 0.22rem;
@@ -79,11 +83,9 @@
 	color: var(--gray);
 }
 
-.card__link--zip::before {
-	content: url("../../assets/Icon\ metro-file-zip.svg");
-	position: relative;
-	top: 3px;
-	margin: 0 3px;
+.card__button {
+	@include basis.button;
+	text-align: left;
 }
 
 @media (max-width: 1000px) {
@@ -100,7 +102,7 @@
 	}
 
 	.card__text {
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 	}
 
 	.card__title {
@@ -110,6 +112,10 @@
 	.card__abstract-title {
 		font-size: 1.1rem;
 		padding-top: 1rem;
+	}
+
+	.button-wrapper {
+		margin-top: 3rem;
 	}
 }
 
