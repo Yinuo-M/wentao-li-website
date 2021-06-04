@@ -1,2 +1,6 @@
 @use "./intro";
 @use "./facts";
+
+.menu__item:first-child > .menu__anchor {
+  color: var(--sky-blue);
+}

@@ -1,6 +1,10 @@
 @use "../common/basis.scss";
 @use "../common/card.scss";
 
+.menu__item:nth-child(3) > .menu__anchor {
+  color: var(--sky-blue);
+}
+
 .teaching-main {
 	max-width: 1366px;
 	margin: 0 auto;
@@ -10,13 +14,13 @@
 	@include basis.page-title;
 }
 
+.footer {
+	margin-top: 7rem;
+}
+
 .footer,
 .contact {
 	background: var(--off-white);
-}
-
-.footer {
-	margin-top: 7rem;
 }
 
 @media (max-width: 1550px) {

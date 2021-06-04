@@ -2,12 +2,12 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		common: "./pages/home/common.js",
+		common: "./pages/common/common.js",
 		home: "./pages/home/index.js",
 		research: "./pages/research/research.js",
 		teaching: "./pages/teaching/teaching.js",
 		tutoring: "./pages/tutoring/tutoring.js",
-		ch: "./stylesheets/common/ch.scss",
+		ch: "./pages/common/ch.js",
 	},
 	target: "web",
 	devServer: {

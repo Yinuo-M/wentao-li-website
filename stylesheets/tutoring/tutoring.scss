@@ -1,5 +1,9 @@
 @use "../common/basis.scss";
 
+.menu__item:nth-child(4) > .menu__anchor {
+  color: var(--sky-blue);
+}
+
 .tutoring-main {
 	max-width: 1366px;
 	margin: auto;
