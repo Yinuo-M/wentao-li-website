@@ -10,6 +10,7 @@
 
 .card__title {
 	font: var(--h3);
+	font-family: "Merriweather", serif !important;
 	color: var(--black);
 	@include basis.reset-general;
 }
@@ -54,6 +55,7 @@
 	margin: 0;
 	padding-top: 0.5rem;
 	font: var(--p);
+	font-family: "Source Sans Pro", sans-serif !important;
 	color: var(--black);
 }
 
@@ -65,6 +67,7 @@
 
 .card__caption {
 	font: var(--caption);
+	font-family: "Source Sans Pro", sans-serif !important;
 	color: var(--gray);
 	max-width: 28rem;
 	text-align: justify;
@@ -84,6 +87,7 @@
 }
 
 .card__button {
+	@include basis.reset-a;
 	@include basis.button;
 	text-align: left;
 }

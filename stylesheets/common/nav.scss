@@ -112,7 +112,7 @@ body {
 }
 
 .menu__button {
-	@include basis.button-reset;
+	text-decoration: none;
 	font: var(--chinese);
 	color: var(--sky-blue);
 	cursor: pointer;

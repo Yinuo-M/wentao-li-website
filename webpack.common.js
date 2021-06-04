@@ -2,11 +2,12 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		common: "./common.js",
-		home: "./index.js",
+		common: "./pages/home/common.js",
+		home: "./pages/home/index.js",
 		research: "./pages/research/research.js",
 		teaching: "./pages/teaching/teaching.js",
 		tutoring: "./pages/tutoring/tutoring.js",
+		ch: "./stylesheets/common/ch.scss",
 	},
 	target: "web",
 	devServer: {
@@ -20,9 +21,14 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			template: "./index.html",
+			template: "./pages/home/index.html",
 			chunks: ["common", "home"],
 			filename: "index.html",
+		}),
+		new HTMLWebpackPlugin({
+			template: "./pages/home/index-ch.html",
+			chunks: ["common", "home", "ch"],
+			filename: "index-ch.html",
 		}),
 		new HTMLWebpackPlugin({
 			template: "./pages/research/research.html",
@@ -30,14 +36,29 @@ module.exports = {
 			filename: "research.html",
 		}),
 		new HTMLWebpackPlugin({
+			template: "./pages/research/research-ch.html",
+			chunks: ["common", "research", "ch"],
+			filename: "research-ch.html",
+		}),
+		new HTMLWebpackPlugin({
 			template: "./pages/teaching/teaching.html",
 			chunks: ["common", "teaching"],
 			filename: "teaching.html",
 		}),
 		new HTMLWebpackPlugin({
+			template: "./pages/teaching/teaching-ch.html",
+			chunks: ["common", "teaching", "ch"],
+			filename: "teaching-ch.html",
+		}),
+		new HTMLWebpackPlugin({
 			template: "./pages/tutoring/tutoring.html",
 			chunks: ["common", "tutoring"],
 			filename: "tutoring.html",
+		}),
+		new HTMLWebpackPlugin({
+			template: "./pages/tutoring/tutoring-ch.html",
+			chunks: ["common", "tutoring", "ch"],
+			filename: "tutoring-ch.html",
 		}),
 	],
 };

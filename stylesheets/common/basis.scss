@@ -64,10 +64,11 @@
 	padding: 1rem 2rem;
 	text-decoration: none;
 	transition: box-shadow 0.3s 0.1s ease-out;
+	overflow: hidden;
 
 	&:hover,
 	&:focus-visible {
-		box-shadow: inset 20rem 0 0 0 var(--sky-blue);
+		box-shadow: inset 23rem 0 0 0 var(--sky-blue);
 	}
 
 	@media (max-width: 600px) {
