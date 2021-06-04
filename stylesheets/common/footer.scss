@@ -104,14 +104,15 @@
 	}
 
 	.credits {
-		padding: 1rem;
+		padding: 1rem 2.5rem;
 		text-align: center;
 	}
 
 	.top-button {
 		display: block;
+		position: absolute;
+		right: 0;
 		@include basis.button-reset;
-		padding-right: 0.5rem;
 		cursor: pointer;
 		transition: transform 0.2s;
 

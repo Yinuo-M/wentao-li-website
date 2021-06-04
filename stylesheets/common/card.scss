@@ -87,9 +87,8 @@
 }
 
 .card__button {
-	@include basis.reset-a;
 	@include basis.button;
-	text-align: left;
+	display: inline-block;
 }
 
 @media (max-width: 1000px) {
