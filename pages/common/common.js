@@ -1,11 +1,14 @@
 import "focus-visible";
 import "../../stylesheets/common/common.scss";
 import smoothscroll from "smoothscroll-polyfill";
+import englishCV from "../../assets/CV - Wentao Li.pdf";
+import chineseCV from "../../assets/简历-李文韬-牛津大学-金融学.pdf";
+import courseMaterial from "../../assets/Introductory Econometrics.rar";
 smoothscroll.polyfill();
 
 //ANCHOR setting up HMR for the dev server.
 if (module.hot) {
-	module.hot.accept();
+  module.hot.accept();
 }
 
 //ANCHOR navigation
@@ -13,23 +16,23 @@ if (module.hot) {
 window.addEventListener("resize", updateMenu);
 
 function updateMenu() {
-	const menuButton = document.querySelector(".hamburger");
-	if (!menuButton) return;
+  const menuButton = document.querySelector(".hamburger");
+  if (!menuButton) return;
 
-	menuButton.addEventListener("click", toggleMenu);
+  menuButton.addEventListener("click", toggleMenu);
 }
 
 function toggleMenu() {
-	const menuButton = document.querySelector(".hamburger");
-	const menu = document.querySelector(".menu__list");
+  const menuButton = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu__list");
 
-	if (menu.classList.contains("menu__list--displayed")) {
-		menu.classList.remove("menu__list--displayed");
-		menuButton.setAttribute("aria-expanded", "false");
-	} else {
-		menu.classList.add("menu__list--displayed");
-		menuButton.setAttribute("aria-expanded", "true");
-	}
+  if (menu.classList.contains("menu__list--displayed")) {
+    menu.classList.remove("menu__list--displayed");
+    menuButton.setAttribute("aria-expanded", "false");
+  } else {
+    menu.classList.add("menu__list--displayed");
+    menuButton.setAttribute("aria-expanded", "true");
+  }
 }
 
 updateMenu();
@@ -38,14 +41,14 @@ updateMenu();
 window.addEventListener("resize", updateToTop);
 
 function updateToTop() {
-	const backButton = document.querySelector(".top-button");
-	if (!backButton) return;
+  const backButton = document.querySelector(".top-button");
+  if (!backButton) return;
 
-	backButton.addEventListener("click", backToTop);
+  backButton.addEventListener("click", backToTop);
 }
 
 function backToTop() {
-	window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 }
 
 updateToTop();
